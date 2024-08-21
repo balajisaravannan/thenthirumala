@@ -1,0 +1,43 @@
+.uthsavams_header {
+ position: relative;   
+ background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../../assets/images/png/uthvash/background.png);
+ width: 100%;
+ height:320px;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: top;
+ padding:10px;
+ 
+}
+
+.uthsavam_content {
+    background-color: #FFEB97;
+    padding: 20px;
+    font-weight: 500;
+    border-bottom: 30px solid transparent;
+    border-image: url(/src/assets/images/png/uthvash/border.png) 50 round;
+    mix-blend-mode: multiply;
+}
+
+@media (min-width : 0px) and (max-width:768px) {
+ .uthsavams_header {
+  height:240px;   
+ }
+ .uthsavam_content {
+   padding: 10px;
+ }
+}
+
+
+/* position: absolute;
+width: 80px;
+height: 34px;
+left: 0px;
+top: 479px;
+
+: url(5055536);
+mix-blend-mode: multiply; */
+
+
+
+

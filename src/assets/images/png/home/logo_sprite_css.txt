@@ -1,0 +1,23 @@
+.bg-logo_english_big {
+    width: 1270px; height: 139px;
+    background: url('css_sprites.png') -25px -191px;
+}
+
+
+
+.bg-logo_english_small {
+    width: 277px; height: 22px;
+    background: url('css_sprites.png') -25px -25px;
+}
+
+
+.bg-logo_tamil_big {
+    width: 1172px; height: 210px;
+    background: url('css_sprites.png') -25px -380px;
+}
+
+
+.bg-logo_tamil_small {
+    width: 222px; height: 44px;
+    background: url('css_sprites.png') -25px -97px;
+}

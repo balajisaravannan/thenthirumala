@@ -1,0 +1,19 @@
+.todayList {
+    position: relative;
+    padding:2.5px; 
+    border-radius: 18px; 
+    background: linear-gradient(301.4deg, #BD219B 12.01%, #E3B614 91.99%);
+    width: fit-content;
+    margin-bottom: 6px;
+}
+
+.todayList-content {
+    border-radius:16px; 
+    padding:8px;
+    color: black;
+    width: 140px;
+    height: 185px;
+    color:white;
+    overflow-y: scroll;
+    background-color: #20130E;
+  }

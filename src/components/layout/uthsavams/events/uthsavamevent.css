@@ -1,0 +1,85 @@
+.uthsavam {
+  position: relative;  
+  height: 768px;
+  padding: 10px;
+ }
+.uthsavam_container {
+ position: relative;   
+ display: flex;
+ padding-block-start: 80px;
+ /* padding-bottom:310px; */
+ overflow-x: scroll;
+}
+
+.uthsavam_event {
+  position: relative;
+  padding:2.5px; 
+  padding-inline:2.6px;
+  padding-block:2.6px;
+  border-radius: 18px; 
+  background: linear-gradient(301.4deg, #BD219B 12.01%, #E3B614 91.99%);
+  width: fit-content;
+  margin-bottom: 6px;   
+  margin-inline: 10px;
+}
+
+.uthsavam_event-content {
+    position: relative;  
+    border-radius:16px; 
+    padding:4px;
+    color: black;
+    width: 185px;
+    height: 260px;
+    color:white;
+    background-color: #FFF8D1;
+    padding: 10px;
+    
+  }
+
+  
+  .octagon {
+    box-sizing: border-box;
+    position: absolute;
+    width: 112px;
+    height: 112px;
+    border-radius: 20px;
+    background-color: #ffd900;
+    top: -60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .uthsavam-bg {
+   position: absolute;
+   bottom:0px;
+   width:260px;
+   height: auto; 
+   background-repeat: no-repeat;
+   left: 0;
+   right: 0;
+   margin: auto;
+  }
+
+  @media (min-width : 1060px) and (max-width:4208px) {
+    .uthsavam_container {
+     overflow: visible;  
+     justify-content: center;
+    } 
+    .uthsavam_event:nth-child(1) {
+        top:165px;
+      }
+      .uthsavam_event:nth-child(2) {
+        top: 74.5px;
+      }
+      .uthsavam_event:nth-child(3) {
+        top: 5px;
+      }
+      .uthsavam_event:nth-child(4) {
+        top: 74.5px;
+      }
+      .uthsavam_event:nth-child(5) {
+        top:165px;
+      }    
+  }
+ 

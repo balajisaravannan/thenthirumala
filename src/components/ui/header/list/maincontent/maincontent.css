@@ -1,0 +1,18 @@
+.tamilTxt {
+ width: 320px; 
+ height: auto;   
+}
+
+.header-mobile-ellipsi {
+    background-image: url('../../../../../assets/images/png/subsvg.svg');   
+    width:100%; 
+    height: -webkit-fill-available;
+    position: absolute;
+    background-size: cover;
+    z-index: 1; 
+    background-position: bottom;
+    /*  
+    margin: auto; */
+    /* left:-10;
+    right: -10; */
+}
