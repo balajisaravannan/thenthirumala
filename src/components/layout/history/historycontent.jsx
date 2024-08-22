@@ -1,4 +1,4 @@
-import { Icon, IconButton, SvgIcon, Typography } from '@mui/material';
+import { Avatar, Icon, IconButton, SvgIcon, Typography } from '@mui/material';
 import React, { useRef, useState } from 'react'
 import Slider from 'react-slick'
 import VolumeUpRoundedIcon from '@mui/icons-material/VolumeUpRounded';
@@ -8,6 +8,8 @@ import FiberManualRecordOutlinedIcon from '@mui/icons-material/FiberManualRecord
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import Test from '../../../assets/images/png/001.mp3'
 import { useTranslation } from 'react-i18next';
+import forwardArrow from "../../../assets/images/svg/btn-forward.svg";
+import backwardArrow from "../../../assets/images/svg/btn-backword.svg";
 
 const HistoryContent = ({data}) => {
  const { i18n } = useTranslation() 
@@ -80,14 +82,16 @@ const HistoryContent = ({data}) => {
       </div>
       <div className='flex items-center flex-row-reverse mr-10'>
        <div className='flex'>
-        <IconButton size='small' className='text-white' onClick={next} disabled={isCondentIndex == data.length-1}><SkipNextRoundedIcon sx={{color:isCondentIndex == data.length-1 ? '#131f3e':'white'}}/></IconButton>
-        <IconButton size='small' className='text-white' onClick={previous} disabled={isCondentIndex == 0}><SkipPreviousRoundedIcon  sx={{color:isCondentIndex == 0 ? '#131f3e' : 'white'}}/></IconButton>
+       <Avatar src={backwardArrow} onClick={previous} sx={{width:"35px",height:"35px",marginInline:"5px",cursor:"pointer"}} disabled={isCondentIndex == data.length-1}/>
+         <Avatar  src={forwardArrow} onClick={next}  sx={{width:"35px",height:"35px",marginInline:"5px",cursor:"pointer"}} disabled={isCondentIndex == 0}/>
+        {/* <IconButton size='small' className='text-white' onClick={next} disabled={isCondentIndex == data.length-1}> <forwardArrow /> </IconButton> */}
+        {/* <IconButton size='small' className='text-white' onClick={previous} disabled={isCondentIndex == 0}><SkipPreviousRoundedIcon  sx={{color:isCondentIndex == 0 ? '#131f3e' : 'white'}}/></IconButton> */}
        </div>
 
-       <div className={`flex items-center rounded-25 px-6 w-fit pt-3 cursor-pointer ${isAudio && 'bg-yellow-500'}`} style={{border:isAudio ? '1.4px solid #ffd601' : '1.4px solid white'}} onClick={()=>onAudioPlay()}>
+       {/* <div className={`flex items-center rounded-25 px-6 w-fit pt-3 cursor-pointer ${isAudio && 'bg-yellow-500'}`} style={{border:isAudio ? '1.4px solid #ffd601' : '1.4px solid white'}} onClick={()=>onAudioPlay()}>
         <Typography variant='h5' fontWeight={500} className={isAudio ?'text-black':'text-white'} mr={0.5}>கேட்க</Typography>
         <VolumeUpRoundedIcon sx={{fontSize:21, color:isAudio ? 'black' : 'white'}}/>
-       </div>  
+       </div>   */}
       </div>
      </div>
     </div>

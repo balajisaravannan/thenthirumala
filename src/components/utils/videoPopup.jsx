@@ -15,7 +15,13 @@ const VideoPopup = ({ open, setOpen, title, videoSrc ,loading}) => {
   }
   return (
     <>
-      <Dialog open={open} maxWidth="md" fullWidth>
+      <Dialog open={open} maxWidth="md" fullWidth
+      sx={{
+        '& .MuiBackdrop-root': {
+          backgroundColor: 'rgb(0 0 0 / 78%)', // Custom backdrop color
+        },
+      }}
+      >
         <DialogTitle sx={{ m: 0, p: 2, fontWeight: "bold", fontSize: 18 }}>
           {title}
         </DialogTitle>

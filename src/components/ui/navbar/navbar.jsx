@@ -24,6 +24,10 @@ const NavbarContent = () => {
     path : '/panchangam'     
   },
   {
+   name : 'Prayer hall',  
+   path : '/prayerhall'
+  },
+  {
     name :'Others',
     path : '/other'  
   }    
@@ -68,16 +72,15 @@ const NavbarContent = () => {
   }
 };
 
-useEffect(() => {
-  window.addEventListener('scroll', handleScroll);
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-}, []);
+// useEffect(() => {
+//   window.addEventListener('scroll', handleScroll);
+//   return () => {
+//     window.removeEventListener('scroll', handleScroll);
+//   };
+// }, []);
 
   return (
-   <>
-   <Header/>
+   <div>
     <div style={{backgroundImage:`url(${background})`, zIndex:99, top:isSticky ? '44px' : 0 }}  className={`w-full flex justify-center items-center p-6 bg-no-repeat bg-cover ${isSticky ? 'fixed top-12' : 'relative'}`}>
     {isResponsive ? <div className='p-5'/> : data?.map((nav, idx) => (
      <div key={idx} className={location.pathname == nav.path ? 
@@ -90,7 +93,7 @@ useEffect(() => {
      </div>   
     ))}
     </div>
-   </>
+   </div>
   )
 }
 

@@ -7,9 +7,9 @@ import theme from './theme'
 const App = () => {
   return (
    <ThemeProvider theme={theme}>
-    <div className='relative overflow-hidden'>
+    {/* <div className='relative overflow-hidden'> */}
      <RouterSetup/> 
-    </div>
+    {/* </div> */}
    </ThemeProvider>  
   )
 }

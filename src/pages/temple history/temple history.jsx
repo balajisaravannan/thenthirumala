@@ -27,7 +27,7 @@ const TempleHistory = () => {
   const isContent = activeIndex == 0 ? contentOneDataEn : contentOneDataTn;
 
   return (
-   <div className='relative w-screen bg-center bg-cover p-10' style={{backgroundImage:`url(${activeIndex == 0 ? Background : SecBackground})`, minHeight:'480px', maxHeight:'100vh', height:'100vh', boxShadow: 'inset 420px 44px 25px rgba(0, 0, 0, 0.5)' }}>
+   <div className='relative w-screen bg-center bg-cover p-10' style={{backgroundImage:`url(${activeIndex == 0 ? Background : SecBackground})`, minHeight:'480px', maxHeight:'100vh', height:'100vh', boxShadow: 'inset 1420px 44px 25px rgba(0, 0, 0, 0.5)' }}>
     <div style={{maxWidth:'1200px', width:'100%', margin:'auto'}}>
      <ul className='flex justify-center cursor-pointer'>
         {menuItems.map((item, index) => (
@@ -80,7 +80,7 @@ const TempleHistory = () => {
         ))}
       </ul>
      
-     <div className={'absolute bottom-1 w-full'} style={{minWidth:'60px', maxWidth:'400px', paddingInline:isCheck ?'0px':'10px'}}>
+     <div className={'absolute w-full'} style={{minWidth:'60px', maxWidth:'400px', paddingInline:isCheck ?'0px':'10px',bottom:'5rem'}}>
       <HistoryContent data={isContent}/>
      </div>
 

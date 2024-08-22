@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import Background from '../../../assets/images/svg/footer.svg'
+// import Background from '../../../assets/images/svg/footer.svg'
+import Background from '../../../assets/images/svg/kopuram.svg'
+
 import Youtube from '../../../assets/images/png/yt.png'
-import Hover from '../../../assets/images/png/footerellipis.svg'
-import Fb from '../../../assets/images/png/fb.png'
-import Insta from '../../../assets/images/png/insta.png'
-import X from '../../../assets/images/png/x.png'
 import { useTranslation } from 'react-i18next'
 import { Avatar, Box, Skeleton, styled, Typography, useMediaQuery, useTheme } from '@mui/material'
 import './footer.css';
