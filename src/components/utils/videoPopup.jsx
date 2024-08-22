@@ -31,7 +31,7 @@ const VideoPopup = ({ open, setOpen, title, videoSrc ,loading}) => {
         >
           <Close />
         </IconButton>
-        <DialogContent dividers>
+        <DialogContent dividers sx={{backgroundColor:"#000",padding:"10px"}}>
         {loading ? 
           <Skeleton
           variant="rectangular"

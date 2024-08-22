@@ -72,7 +72,7 @@ const { month, day, dayname } = getTamilDate()
        <div>
         <Avatar variant='square' src={One} alt='logo' sx={{width:'95%', height:'auto', borderRadius:'12px'}}/>
         <div className='p-5'>
-        <Typography className='text-yellow-500' variant='h5' fontWeight={500}>{item?.title}</Typography>
+        <Typography className='text-yellow-600' variant='h5' fontWeight={500}>{item?.title}</Typography>
         <Typography className='text-white' variant='h6' fontWeight={400} mb={1.5}>{item?.content}</Typography>   
        </div>
       </div>  

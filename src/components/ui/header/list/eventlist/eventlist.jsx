@@ -9,13 +9,13 @@ const EventList = () => {
  const headerContent = t('header.event', { returnObjects: true }) || [];    
 
   return (
-   <div className='h-full flex justify-end flex-col'>
+   <div className='h-full flex justify-end flex-col' style={{height: "100vh",justifyContent: "center"}}>
     {Array.isArray(headerContent) && headerContent.map((item, idx) => (
      <div className='eventlist'>
       <div className='eventlist-content'>
       <Avatar variant='square' src={One} alt='logo' sx={{width:'100%', height:'auto', borderRadius:'12px'}}/>
       <div className='p-5'>
-      <Typography className='text-yellow-500' variant='h5' fontWeight={500}>{item?.title}</Typography>
+      <Typography className='text-yellow-500' variant='h5' fontWeight={600} fontSize="1rem">{item?.title}</Typography>
       <Typography className='text-white' variant='h6' fontWeight={400}>{item?.content}</Typography>   
      </div>
       </div>  

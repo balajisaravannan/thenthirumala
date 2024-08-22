@@ -104,7 +104,7 @@ const CustomizeSlider = () => {
   };
 
   return (
-      <div className="slider-container relative px-14 cursor-pointer bg-white" style={{marginBlockEnd:'35px', maxWidth:' 1200px',margin: 'auto'}}>
+      <div className="slider-container relative px-14 cursor-pointer bg-white" style={{marginBlockEnd:'35px', maxWidth:' 1200px',margin: 'auto',paddingBlockEnd:"30px"}}>
         <Slider {...settings}>
           {swipperData.map((item, idx) => (
             <div key={idx} className={isResponsive ? 'px-6' :'px-12'}>
